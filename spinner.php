@@ -13,4 +13,11 @@
 		}
 		return str_replace($toFind, $toReplace, $txt);
 	}
+	
+	function demo()
+	{
+		$text = "The {quick|slow|reasonably paced} {brown|green|blue|pink} {fox|goat|rat|camel}
+		{jumped|walked|hopped} {over|past|under} the {lazy|tired|boring} {dog|cat|stoat}";
+		echo $this->spinner($text);
+	}
 ?>
